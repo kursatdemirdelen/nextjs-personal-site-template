@@ -4,6 +4,8 @@
     "projects": "Projeler",
     "hobbies": "Hobiler",
     "blog": "Blog",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
     "allPosts": "Tüm Yazılar",
     "allProjects": "Tüm Projeler",
     "readMore": "Devamını oku",
@@ -43,6 +45,7 @@
     "description": "Kod yazmadığım zamanlarda bu tutkularımın peşinden koşuyorum."
   },
   "footer": {
-    "rights": "Tüm hakları saklıdır."
+    "rights": "Tüm hakları saklıdır.",
+    "scrollToTop": "Yukarı çık"
   }
 }

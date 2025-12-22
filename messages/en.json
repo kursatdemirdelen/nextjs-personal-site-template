@@ -4,6 +4,8 @@
     "projects": "Projects",
     "hobbies": "Hobbies",
     "blog": "Blog",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
     "allPosts": "All Posts",
     "allProjects": "All Projects",
     "readMore": "Read more",
@@ -43,6 +45,7 @@
     "description": "When I'm not coding, I pursue these passions."
   },
   "footer": {
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "scrollToTop": "Scroll to top"
   }
 }
