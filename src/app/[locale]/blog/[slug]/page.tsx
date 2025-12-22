@@ -76,6 +76,7 @@ export default async function BlogPostPage({ params }: Params) {
 
   const { frontmatter, content, headings } = postData;
   const readTime = frontmatter.readTime ?? getReadingTime(content);
+  const localeType = locale as "tr" | "en";
 
   // Get all posts for related posts
   const allPosts = await getAllBlogPosts();
@@ -90,10 +91,10 @@ export default async function BlogPostPage({ params }: Params) {
         >
           <div className="flex flex-wrap items-center gap-4 text-sm text-[--color-muted] mb-6">
             <time title={frontmatter.date}>
-              {getRelativeTime(frontmatter.date)}
+              {getRelativeTime(frontmatter.date, localeType)}
             </time>
             <span>•</span>
-            <span>{formatDate(frontmatter.date)}</span>
+            <span>{formatDate(frontmatter.date, localeType)}</span>
             <span>•</span>
             <span>{readTime}</span>
           </div>

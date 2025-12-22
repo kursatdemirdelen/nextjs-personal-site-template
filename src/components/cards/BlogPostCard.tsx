@@ -3,19 +3,22 @@ import Tag from "../ui/Tag";
 import type { BlogPost } from "@/types";
 import { getRelativeTime } from "@/utils/dateFormat";
 import { getReadingTime } from "@/utils/readingTime";
+import { useTranslations, useLocale } from "next-intl";
 
 interface BlogPostCardProps {
   post: BlogPost;
 }
 
 export default function BlogPostCard({ post }: BlogPostCardProps) {
+  const t = useTranslations("common");
+  const locale = useLocale() as "tr" | "en";
   const readTime = post.readTime ?? getReadingTime(post.description);
 
   return (
     <Link href={`/blog/${post.slug}`} className="block">
       <article className="border border-[--color-border] rounded-[--radius-sm] p-6 hover:border-[--color-accent] card-transition group bg-[--surface-1]">
         <div className="flex items-center gap-3 text-sm text-[--color-muted] mb-3">
-          <time title={post.date}>{getRelativeTime(post.date)}</time>
+          <time title={post.date}>{getRelativeTime(post.date, locale)}</time>
           <span>•</span>
           <span>{readTime}</span>
         </div>
@@ -29,7 +32,7 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
           ))}
         </div>
         <div className="inline-flex items-center gap-2 text-sm text-[--color-accent] hover:text-[--color-accent-hover] transition-colors group-hover:gap-3 font-medium">
-          Devamını oku
+          {t("readMore")}
           <svg
             className="w-4 h-4 transition-transform group-hover:translate-x-1"
             fill="none"
