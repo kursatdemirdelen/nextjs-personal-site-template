@@ -44,7 +44,7 @@ export default function Footer() {
             <button
               onClick={scrollToTop}
               className="ml-2 p-2 rounded-[--radius-sm] text-[--color-muted] hover:text-[--color-accent] hover:bg-[--surface-2]"
-              aria-label="Yukarı çık"
+              aria-label={t("scrollToTop")}
             >
               <svg
                 className="w-5 h-5"
