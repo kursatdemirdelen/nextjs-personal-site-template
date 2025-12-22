@@ -8,6 +8,13 @@ A clean, modern template for developers to showcase their work, share blog posts
 
 **[Live Demo](https://ahmetkursat.com)** • **[Documentation](./SETUP.md)** • **[Report Bug](https://github.com/kursatdemirdelen/nextjs-personal-site-template/issues)**
 
+## 🚀 One-Click Deploy
+
+Deploy your own copy of this template with one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/kursatdemirdelen/nextjs-personal-site-template&project-name=my-personal-site&repository-name=my-personal-site)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kursatdemirdelen/nextjs-personal-site-template)
+
 > 📸 **Screenshot/Demo GIF goes here** - Add your own screenshot after deploying
 
 ---
