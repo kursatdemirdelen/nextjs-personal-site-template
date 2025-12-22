@@ -1,12 +1,12 @@
 {
-  "name": "personal-site",
+  "name": "nextjs-personal-site-template",
   "version": "1.0.0",
-  "description": "Modern personal website with Next.js 16, React 19, TypeScript, and Tailwind CSS 4",
+  "description": "A clean, modern template for developers to showcase their work, share blog posts, and build their online presence. Built with Next.js 16, React 19, and TypeScript.",
   "author": "Kürşat Demirdelen",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kursatdemirdelen/personal-site.git"
+    "url": "https://github.com/kursatdemirdelen/nextjs-personal-site-template.git"
   },
   "keywords": [
     "nextjs",
