@@ -1,0 +1,48 @@
+{
+  "common": {
+    "home": "Ana Sayfa",
+    "projects": "Projeler",
+    "hobbies": "Hobiler",
+    "blog": "Blog",
+    "allPosts": "Tüm Yazılar",
+    "allProjects": "Tüm Projeler",
+    "readMore": "Devamını oku",
+    "backToBlog": "Blog'a Dön",
+    "backToProjects": "Projelere Dön",
+    "seeAllPosts": "Tüm yazıları gör",
+    "seeAllProjects": "Tüm projeleri gör",
+    "technologies": "Teknolojiler",
+    "features": "Özellikler",
+    "aboutProject": "Proje Hakkında",
+    "viewOnGithub": "GitHub'da Görüntüle",
+    "tableOfContents": "İçindekiler",
+    "relatedPosts": "İlgili Yazılar",
+    "share": "Paylaş",
+    "copyLink": "Linki Kopyala",
+    "copied": "Kopyalandı!",
+    "noPostsFound": "yazısı bulunamadı",
+    "noProjectsFound": "projesi bulunamadı",
+    "notFound": "Sayfa bulunamadı",
+    "notFoundDescription": "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
+    "goHome": "Ana Sayfaya Dön"
+  },
+  "home": {
+    "technologies": "Teknolojiler",
+    "projects": "Projeler"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Düşünceler, yazılım notları ve yolculuktan hikayeler."
+  },
+  "projects": {
+    "title": "Projeler",
+    "description": "Geliştirdiğim ve sürdürdüğüm projeler."
+  },
+  "hobbies": {
+    "title": "Hobiler",
+    "description": "Kod yazmadığım zamanlarda bu tutkularımın peşinden koşuyorum."
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır."
+  }
+}

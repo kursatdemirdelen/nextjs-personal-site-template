@@ -1,0 +1,49 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "Modern personal website with Next.js 16, React 19, TypeScript, and Tailwind CSS 4",
+  "author": "Kürşat Demirdelen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kursatdemirdelen/personal-site.git"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "personal-website",
+    "blog",
+    "mdx"
+  ],
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "gray-matter": "^4.0.3",
+    "next": "16.0.10",
+    "next-intl": "^4.6.1",
+    "next-mdx-remote": "^5.0.0",
+    "next-themes": "^0.4.6",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "rehype-pretty-code": "^0.14.1",
+    "shiki": "^3.19.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,300 @@
+---
+title: "Getting Started with This Template"
+description: "Learn how to set up and customize this Next.js personal website template for your own use. A complete guide to getting your site up and running."
+date: "December 22, 2025"
+tags: ["Tutorial", "Getting Started", "Next.js"]
+---
+
+Welcome! This guide will walk you through setting up and customizing this template for your personal website. You'll have your site running locally in minutes and deployed to production shortly after.
+
+## Prerequisites
+
+Before you begin, make sure you have:
+
+- **Node.js 18+** installed on your machine
+- **Git** for version control
+- A code editor (VS Code recommended)
+- A GitHub account (for deployment)
+
+## Quick Setup
+
+### 1. Clone and Install
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/your-site.git
+cd your-site
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser. You should see the template running with placeholder content.
+
+### 2. Configure Your Site
+
+The main configuration file is `src/data/site.ts`. Update it with your information:
+
+```typescript
+export const siteConfig = {
+  name: "John Doe",
+  title: "Full Stack Developer",
+  tagline: "Building modern web applications with React and Node.js",
+  description: "I'm a developer focused on creating accessible...",
+  url: "https://johndoe.com",
+  socialLinks: {
+    github: "https://github.com/johndoe",
+    linkedin: "https://linkedin.com/in/johndoe",
+    email: "hello@johndoe.com",
+  },
+  skills: ["React", "Next.js", "TypeScript", "Node.js"],
+};
+```
+
+### 3. Add Your Projects
+
+Edit `src/data/projects.ts` to showcase your work:
+
+```typescript
+export const projects: Project[] = [
+  {
+    title: "My Awesome Project",
+    description: "A detailed description of what this project does...",
+    url: "https://github.com/yourusername/project",
+    tags: ["React", "TypeScript", "API"],
+    slug: "my-awesome-project",
+  },
+  // Add more projects...
+];
+```
+
+**Important**: The `slug` field is used for the URL path. Make it URL-friendly (lowercase, hyphens instead of spaces).
+
+### 4. Customize Your Hobbies
+
+Update `src/data/hobbies.ts` with your interests:
+
+```typescript
+export const hobbies: Hobby[] = [
+  {
+    icon: "🎸",
+    title: "Music",
+    description: "Playing guitar and producing beats",
+  },
+  // Add more hobbies...
+];
+```
+
+Pick emojis from [Emojipedia](https://emojipedia.org/) that represent your hobbies.
+
+## Writing Blog Posts
+
+Blog posts are written in MDX (Markdown + React components). Create a new file in `content/blog/`:
+
+```mdx
+---
+title: "My First Blog Post"
+description: "A brief description for SEO and previews"
+date: "December 22, 2025"
+tags: ["React", "Tutorial", "Web Development"]
+---
+
+## Introduction
+
+Your content here...
+
+### Code Examples
+
+\`\`\`typescript
+const greeting = "Hello, world!";
+console.log(greeting);
+\`\`\`
+
+You can use all standard Markdown features plus React components!
+```
+
+### Frontmatter Fields
+
+- `title`: The post title (required)
+- `description`: SEO description and preview text (required)
+- `date`: Publication date in "Month Day, Year" format (required)
+- `tags`: Array of tags for categorization (optional)
+
+## Customizing Styles
+
+### Colors and Theme
+
+Edit CSS variables in `src/app/globals.css`:
+
+```css
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  --accent: 0 84% 60%; /* Your brand color */
+}
+
+.dark {
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  --accent: 0 84% 60%;
+}
+```
+
+The template uses HSL color format. Use a [color picker](https://hslpicker.com/) to find values.
+
+### Fonts
+
+To change fonts, update `src/app/layout.tsx`:
+
+```typescript
+import { Inter, JetBrains_Mono } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
+const mono = JetBrains_Mono({ subsets: ["latin"] });
+```
+
+## Adding Languages
+
+The template supports internationalization. To add a new language:
+
+1. Create `messages/fr.json` (or your language code)
+2. Copy content from `messages/en.json`
+3. Translate the values
+4. Update `src/i18n/routing.ts`:
+
+```typescript
+export const routing = defineRouting({
+  locales: ['en', 'tr', 'fr'], // Add your language
+  defaultLocale: 'en'
+});
+```
+
+## Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com) and sign in
+3. Click "Add New Project"
+4. Import your repository
+5. Click "Deploy"
+
+Vercel will automatically:
+- Build your site
+- Generate optimized pages
+- Set up a production URL
+- Enable automatic deployments on push
+
+### Environment Variables
+
+If you add features that need API keys, add them in your Vercel dashboard:
+
+```
+NEXT_PUBLIC_ANALYTICS_ID=your-id-here
+```
+
+## Common Customizations
+
+### Remove a Section
+
+To remove the hobbies section entirely:
+
+1. Delete `src/app/[locale]/hobbies/page.tsx`
+2. Remove the hobbies link from `src/components/layout/Header.tsx`
+3. Delete `src/data/hobbies.ts`
+
+### Add a Contact Form
+
+This template doesn't include a contact form by default, but you can add one using:
+
+- [React Email](https://react.email/) + [Resend](https://resend.com/)
+- [Formspree](https://formspree.io/)
+- [Web3Forms](https://web3forms.com/)
+
+### Add Analytics
+
+Install and configure your analytics provider:
+
+```bash
+npm install @vercel/analytics
+```
+
+Add to `src/app/layout.tsx`:
+
+```typescript
+import { Analytics } from '@vercel/analytics/react';
+
+export default function RootLayout({ children }) {
+  return (
+    <html>
+      <body>
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  );
+}
+```
+
+## Project Structure Reference
+
+```
+src/
+├── app/                  # Next.js app router
+│   ├── [locale]/        # Internationalized pages
+│   └── api/             # API routes
+├── components/          # React components
+│   ├── layout/          # Header, Footer
+│   ├── ui/              # Reusable UI
+│   └── blog/            # Blog-specific
+├── data/                # Site content
+├── i18n/                # Translations
+└── utils/               # Helper functions
+```
+
+## Troubleshooting
+
+### Build Errors
+
+If you get TypeScript errors:
+
+```bash
+npm run type-check
+```
+
+Fix any type errors before deploying.
+
+### Styling Issues
+
+Clear Next.js cache:
+
+```bash
+rm -rf .next
+npm run dev
+```
+
+### Module Not Found
+
+Reinstall dependencies:
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+## Next Steps
+
+- Read the [full documentation](https://github.com/yourusername/template)
+- Join our [discussions](https://github.com/yourusername/template/discussions)
+- Report bugs or request features
+
+## Need Help?
+
+- Check the [FAQ](https://github.com/yourusername/template/wiki/FAQ)
+- Open an [issue](https://github.com/yourusername/template/issues)
+- Star the repo if this helped you!
+
+Happy building! 🚀

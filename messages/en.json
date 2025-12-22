@@ -1,0 +1,48 @@
+{
+  "common": {
+    "home": "Home",
+    "projects": "Projects",
+    "hobbies": "Hobbies",
+    "blog": "Blog",
+    "allPosts": "All Posts",
+    "allProjects": "All Projects",
+    "readMore": "Read more",
+    "backToBlog": "Back to Blog",
+    "backToProjects": "Back to Projects",
+    "seeAllPosts": "See all posts",
+    "seeAllProjects": "See all projects",
+    "technologies": "Technologies",
+    "features": "Features",
+    "aboutProject": "About Project",
+    "viewOnGithub": "View on GitHub",
+    "tableOfContents": "Table of Contents",
+    "relatedPosts": "Related Posts",
+    "share": "Share",
+    "copyLink": "Copy Link",
+    "copied": "Copied!",
+    "noPostsFound": "posts found",
+    "noProjectsFound": "projects found",
+    "notFound": "Page not found",
+    "notFoundDescription": "The page you are looking for does not exist or has been moved.",
+    "goHome": "Go to Home"
+  },
+  "home": {
+    "technologies": "Technologies",
+    "projects": "Projects"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Thoughts, dev notes, and stories from the journey."
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Projects I've built and maintained."
+  },
+  "hobbies": {
+    "title": "Hobbies",
+    "description": "When I'm not coding, I pursue these passions."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
