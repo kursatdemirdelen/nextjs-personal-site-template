@@ -22,8 +22,8 @@ Before you begin, make sure you have:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-site.git
-cd your-site
+git clone https://github.com/kursatdemirdelen/nextjs-personal-site-template.git
+cd nextjs-personal-site-template
 
 # Install dependencies
 npm install
@@ -167,8 +167,8 @@ The template supports internationalization. To add a new language:
 
 ```typescript
 export const routing = defineRouting({
-  locales: ['en', 'tr', 'fr'], // Add your language
-  defaultLocale: 'en'
+  locales: ["en", "tr", "fr"], // Add your language
+  defaultLocale: "en",
 });
 ```
 
@@ -183,6 +183,7 @@ export const routing = defineRouting({
 5. Click "Deploy"
 
 Vercel will automatically:
+
 - Build your site
 - Generate optimized pages
 - Set up a production URL
@@ -225,7 +226,7 @@ npm install @vercel/analytics
 Add to `src/app/layout.tsx`:
 
 ```typescript
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({ children }) {
   return (
@@ -287,14 +288,14 @@ npm install
 
 ## Next Steps
 
-- Read the [full documentation](https://github.com/yourusername/template)
-- Join our [discussions](https://github.com/yourusername/template/discussions)
+- Read the [full documentation](https://github.com/kursatdemirdelen/nextjs-personal-site-template)
+- Join our [discussions](https://github.com/kursatdemirdelen/nextjs-personal-site-template/discussions)
 - Report bugs or request features
 
 ## Need Help?
 
-- Check the [FAQ](https://github.com/yourusername/template/wiki/FAQ)
-- Open an [issue](https://github.com/yourusername/template/issues)
+- Check the [FAQ](https://github.com/kursatdemirdelen/nextjs-personal-site-template/wiki/FAQ)
+- Open an [issue](https://github.com/kursatdemirdelen/nextjs-personal-site-template/issues)
 - Star the repo if this helped you!
 
 Happy building! 🚀

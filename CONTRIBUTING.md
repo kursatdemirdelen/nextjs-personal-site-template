@@ -6,7 +6,7 @@ Thanks for your interest in contributing!
 
 ### Reporting Bugs
 
-Found a bug? [Open an issue](https://github.com/kursatdemirdelen/personal-site/issues) with:
+Found a bug? [Open an issue](https://github.com/kursatdemirdelen/nextjs-personal-site-template/issues) with:
 - Steps to reproduce
 - Expected vs actual behavior
 - Screenshots if applicable
