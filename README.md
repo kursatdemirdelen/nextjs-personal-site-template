@@ -183,10 +183,7 @@ npm run type-check   # TypeScript validation
 
 ## Documentation
 
-- **[SETUP.md](./SETUP.md)** - Complete setup guide
-- **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Technical details
-- **[CONTRIBUTING.md](./CONTRIBUTING.md)** - Contribution guidelines
-- **[CHANGELOG.md](./CHANGELOG.md)** - Version history
+See **[SETUP.md](./SETUP.md)** for detailed configuration guide.
 
 ## Customization Examples
 
@@ -210,7 +207,7 @@ Don't need hobbies? Delete the page and remove navigation links. Everything is m
 
 ## Contributing
 
-Contributions welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) first.
+Contributions welcome!
 
 1. Fork the repo
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
