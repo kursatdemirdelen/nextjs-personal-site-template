@@ -6,16 +6,18 @@ A clean, modern template for developers to showcase their work, share blog posts
 [![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
 
-**[Live Demo](https://ahmetkursat.com)** • **[Documentation](./SETUP.md)** • **[Report Bug](https://github.com/kursatdemirdelen/nextjs-personal-site-template/issues)**
+**[Live Demo](https://nextjs-personal-site-template.vercel.app)** • **[Türkçe](./README.tr.md)** • **[Documentation](./SETUP.md)** • **[Report Bug](https://github.com/kursatdemirdelen/nextjs-personal-site-template/issues)**
 
 ## 🚀 One-Click Deploy
 
 Deploy your own copy of this template with one click:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/kursatdemirdelen/nextjs-personal-site-template&project-name=my-personal-site&repository-name=my-personal-site)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/kursatdemirdelen/nextjs-personal-site-template&project-name=my-personal-site&repository-name=my-personal-site&env=NEXT_PUBLIC_SITE_URL&envDescription=Your%20site%20URL%20for%20SEO%20(sitemap,%20canonical%20URLs)&envLink=https://github.com/kursatdemirdelen/nextjs-personal-site-template%23environment-variables)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kursatdemirdelen/nextjs-personal-site-template)
 
-> 📸 **Screenshot/Demo GIF goes here** - Add your own screenshot after deploying
+> After deployment, set `NEXT_PUBLIC_SITE_URL` to your domain in project settings.
+
+![Template Preview](https://nextjs-personal-site-template.vercel.app/opengraph-image)
 
 ---
 
@@ -48,7 +50,17 @@ Open [http://localhost:3000](http://localhost:3000) to see your site.
 
 ## Customization
 
-### 1. Update Site Information
+### 1. Set Environment Variables
+
+Copy `.env.example` to `.env.local` and update:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+```
+
+> **Vercel Users**: Set this in Project Settings → Environment Variables
+
+### 2. Update Site Information
 
 Edit `src/data/site.ts`:
 
@@ -57,12 +69,12 @@ export const siteConfig = {
   name: "Your Name",
   title: "Your Professional Title",
   tagline: "Your tagline here",
-  url: "https://yoursite.com",
-  // ... more config
+  // URL is set via NEXT_PUBLIC_SITE_URL env variable
+  socialLinks: { ... },
 };
 ```
 
-### 2. Add Your Projects
+### 3. Add Your Projects
 
 Edit `src/data/projects.ts`:
 
@@ -78,7 +90,7 @@ export const projects: Project[] = [
 ];
 ```
 
-### 3. Write Blog Posts
+### 4. Write Blog Posts
 
 Create MDX files in `content/blog/`:
 
@@ -129,13 +141,26 @@ content/blog/              # MDX blog posts
 messages/                  # Translation files
 ```
 
+## Environment Variables
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `NEXT_PUBLIC_SITE_URL` | Yes | Your site URL (for SEO, sitemap, RSS) |
+
+Create `.env.local` for local development:
+
+```bash
+cp .env.example .env.local
+```
+
 ## Deployment
 
 ### Vercel (Recommended)
 
 1. Push to GitHub
 2. Import your repo on [vercel.com](https://vercel.com)
-3. Click Deploy
+3. Add environment variable: `NEXT_PUBLIC_SITE_URL` = `https://your-domain.vercel.app`
+4. Click Deploy
 
 That's it! Vercel handles build, deployment, and automatic updates.
 

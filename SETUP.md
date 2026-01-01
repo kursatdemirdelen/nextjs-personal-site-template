@@ -18,7 +18,23 @@ npm install
 - Node.js 18+
 - npm or yarn
 
-### 2. Customize Site Info
+### 2. Set Environment Variables
+
+Copy the example file and update:
+
+```bash
+cp .env.example .env.local
+```
+
+Edit `.env.local`:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+```
+
+> **Important**: This URL is used for SEO (sitemap, canonical URLs, RSS feed)
+
+### 3. Customize Site Info
 
 Edit `src/data/site.ts`:
 
@@ -28,7 +44,7 @@ export const siteConfig = {
   title: "Frontend Developer",
   tagline: "Your short tagline",
   description: "Longer description...",
-  url: "https://yourdomain.com", // Update after deploy
+  // URL comes from NEXT_PUBLIC_SITE_URL env variable
   socialLinks: {
     github: "https://github.com/username",
     linkedin: "https://linkedin.com/in/username",
@@ -38,7 +54,7 @@ export const siteConfig = {
 };
 ```
 
-### 3. Add Your Projects
+### 4. Add Your Projects
 
 Edit `src/data/projects.ts`:
 
@@ -54,7 +70,7 @@ export const projects: Project[] = [
 ];
 ```
 
-### 4. Run Dev Server
+### 5. Run Dev Server
 
 ```bash
 npm run dev
@@ -62,13 +78,16 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
-### 5. Deploy to Vercel
+### 6. Deploy to Vercel
 
 1. Push to GitHub
 2. Import project on [vercel.com](https://vercel.com)
-3. Click Deploy
+3. Add environment variable:
+   - Name: `NEXT_PUBLIC_SITE_URL`
+   - Value: `https://your-project.vercel.app`
+4. Click Deploy
 
-After deploy, update `url` in `src/data/site.ts` with your Vercel domain.
+> **Tip**: You can update the URL later if you add a custom domain.
 
 ---
 

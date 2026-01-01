@@ -8,5 +8,7 @@ export const config = {
   // - API routes
   // - _next (Next.js internals)
   // - Static files (images, etc.)
-  matcher: ["/((?!api|_next|.*\\..*).*)"],
+  // - opengraph-image, twitter-image (OG image generation)
+  // - sitemap.xml, robots.txt, feed.xml (SEO files)
+  matcher: ["/((?!api|_next|opengraph-image|twitter-image|sitemap\\.xml|robots\\.txt|feed\\.xml|.*\\..*).*)"],
 };
