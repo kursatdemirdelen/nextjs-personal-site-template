@@ -17,7 +17,20 @@ Deploy your own copy of this template with one click:
 
 > After deployment, set `NEXT_PUBLIC_SITE_URL` to your domain in project settings.
 
-![Template Preview](https://nextjs-personal-site-template.vercel.app/opengraph-image)
+## 📸 Screenshots
+
+<p align="center">
+  <img src="public/images/ss1.png" width="49%" />
+  <img src="public/images/ss2.png" width="49%" />
+</p>
+<p align="center">
+  <img src="public/images/ss3.png" width="49%" />
+  <img src="public/images/ss4.png" width="49%" />
+</p>
+<p align="center">
+  <img src="public/images/ss5.png" width="49%" />
+  <img src="public/images/ss6.png" width="49%" />
+</p>
 
 ---
 

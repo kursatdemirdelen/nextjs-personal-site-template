@@ -8,7 +8,20 @@ Geliştiriciler için hazırlanmış, modern ve şık bir kişisel web sitesi ş
 
 🌐 **[Canlı Demo](https://nextjs-personal-site-template.vercel.app/tr)** • 📖 **[English](./README.md)** • 🐛 **[Hata Bildir](https://github.com/kursatdemirdelen/nextjs-personal-site-template/issues)**
 
-![Şablon Önizleme](https://nextjs-personal-site-template.vercel.app/opengraph-image)
+## 📸 Ekran Görüntüleri
+
+<p align="center">
+  <img src="public/images/ss1.png" width="49%" />
+  <img src="public/images/ss2.png" width="49%" />
+</p>
+<p align="center">
+  <img src="public/images/ss3.png" width="49%" />
+  <img src="public/images/ss4.png" width="49%" />
+</p>
+<p align="center">
+  <img src="public/images/ss5.png" width="49%" />
+  <img src="public/images/ss6.png" width="49%" />
+</p>
 
 ---
 
