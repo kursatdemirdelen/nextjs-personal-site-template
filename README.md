@@ -29,7 +29,6 @@ Deploy your own copy of this template with one click:
 </p>
 <p align="center">
   <img src="public/images/ss5.png" width="49%" />
-  <img src="public/images/ss6.png" width="49%" />
 </p>
 
 ---

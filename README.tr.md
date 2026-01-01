@@ -20,7 +20,6 @@ Geliştiriciler için hazırlanmış, modern ve şık bir kişisel web sitesi ş
 </p>
 <p align="center">
   <img src="public/images/ss5.png" width="49%" />
-  <img src="public/images/ss6.png" width="49%" />
 </p>
 
 ---
