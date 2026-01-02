@@ -287,3 +287,17 @@ pre code .language-tsx .token.attr-name {
   color: #79c0ff;
   font-style: italic;
 }
+
+/* Animated Greeting - Blink cursor animation */
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}

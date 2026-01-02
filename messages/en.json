@@ -30,7 +30,8 @@
   },
   "home": {
     "technologies": "Technologies",
-    "projects": "Projects"
+    "projects": "Projects",
+    "greetings": ["Hello! 👋", "Welcome! 🚀", "Hi there! ✨", "Hey! 🎯"]
   },
   "blog": {
     "title": "Blog",

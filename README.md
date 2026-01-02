@@ -35,6 +35,7 @@ Deploy your own copy of this template with one click:
 
 ## Features
 
+- ✨ **Animated Greeting** - Typewriter effect with customizable messages
 - 📝 **MDX Blog** - Write posts in Markdown with React components
 - 🎨 **Dark Mode** - Automatic theme switching with system preference detection
 - 🌍 **i18n Support** - Turkish and English built-in, easy to add more

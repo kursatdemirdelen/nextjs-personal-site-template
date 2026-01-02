@@ -38,6 +38,7 @@ Kendi siteni saniyeler içinde oluştur:
 
 | Özellik | Açıklama |
 |---------|----------|
+| ✨ **Animasyonlu Karşılama** | Typewriter efekti ile özelleştirilebilir mesajlar |
 | 📝 **MDX Blog** | Markdown ile blog yaz, React componentleri kullan |
 | 🌙 **Karanlık Mod** | Sistem temasına göre otomatik geçiş |
 | 🌍 **Çoklu Dil** | Türkçe ve İngilizce hazır, yeni dil eklemek kolay |

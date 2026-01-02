@@ -30,7 +30,8 @@
   },
   "home": {
     "technologies": "Teknolojiler",
-    "projects": "Projeler"
+    "projects": "Projeler",
+    "greetings": ["Merhaba! 👋", "Hoş geldin! 🚀", "Selam! ✨", "Hey! 🎯"]
   },
   "blog": {
     "title": "Blog",

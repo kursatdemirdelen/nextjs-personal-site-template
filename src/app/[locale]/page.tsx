@@ -1,4 +1,10 @@
-import { PageLayout, ProjectCard, Tag, Section } from "@/components";
+import {
+  PageLayout,
+  ProjectCard,
+  Tag,
+  Section,
+  AnimatedGreeting,
+} from "@/components";
 import { projects, siteConfig } from "@/data";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -17,11 +23,15 @@ export default async function Home({ params }: HomeProps) {
 
 function HomeContent() {
   const t = useTranslations();
+  const greetings = t.raw("home.greetings") as string[];
 
   return (
     <PageLayout>
       {/* About Section */}
       <Section className="py-16 border-b border-[--color-border]">
+        <div className="text-2xl md:text-3xl font-semibold mb-4">
+          <AnimatedGreeting greetings={greetings} />
+        </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-(--heading-tracking)">
           {siteConfig.name}
         </h1>

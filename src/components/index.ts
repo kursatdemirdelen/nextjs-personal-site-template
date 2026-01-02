@@ -9,6 +9,7 @@ export { default as Tag } from "./ui/Tag";
 export { ThemeProvider } from "./ui/ThemeProvider";
 export { default as ThemeToggle } from "./ui/ThemeToggle";
 export { default as LanguageToggle } from "./ui/LanguageToggle";
+export { AnimatedGreeting } from "./ui/AnimatedGreeting";
 
 // Card Components
 export { default as BlogPostCard } from "./cards/BlogPostCard";
